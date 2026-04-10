@@ -28,8 +28,3 @@ Tracks 24-hour activity using a compact bitset.
 - Daily activity monitoring
 - Large-scale analytics backends
 - Real-time data aggregation systems
-
-### Performance
-
-- **EventSet**: O(1) insertion, O(log n) search
-- **ActivityCounter**: O(1) update, O(1) query
