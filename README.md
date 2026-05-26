@@ -9,7 +9,7 @@ Tracks very large counts (up to 2.6 billion) using probabilistic increments.
 - Increments become less likely as count grows
 - See detailed [explanation](PROB_COUNTER_EXPLANATION.md)
 
-### EventSet
+### IntervalSet
 Stores ordered event sequences using time diffs instead of full timestamps.
 - 2 bytes per event vs 4 bytes traditional (50% reduction)
 - Tracks intervals, sum of durations, event counts within 30-minute threshold
@@ -28,8 +28,3 @@ Tracks 24-hour activity using a compact bitset.
 - Daily activity monitoring
 - Large-scale analytics backends
 - Real-time data aggregation systems
-
-### Performance
-
-- **EventSet**: O(1) insertion, O(log n) search
-- **ActivityCounter**: O(1) update, O(1) query
